@@ -41,9 +41,30 @@ fn main() {
     let first = a[0];
     let second = a[1];
 
-    another_function();
+    // function
+    another_function(12, 'm');
+
+    println!("{}", five());
+
+    // control flow
+    let number = 3;
+    if number < 3 {
+        println!("Less than 3");
+    } else if number == 3 {
+        println!("Equal 3");
+    } else {
+        println!("Greater to 3");
+    }
+
+    // let statement
+    let equal = if number == 3 { true } else { false };
+    println!("{}", equal);
 }
 
-fn another_function() {
-    println!("another function!!!!")
+fn another_function(value: i32, unit_label: char) {
+    println!("The measurement is {value} {unit_label}");
+}
+
+fn five() -> i32 {
+    5
 }
