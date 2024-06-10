@@ -1,0 +1,13 @@
+[package]
+name = "kevin_publishing_a_rust_crate"
+version = "0.1.0"
+edition = "2021"
+authors = ["bogdan"]
+
+[dependencies]
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
