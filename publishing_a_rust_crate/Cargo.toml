@@ -2,7 +2,9 @@
 name = "kevin_yeung_art"
 version = "0.1.0"
 edition = "2021"
-authors = ["bogdan"]
+authors = ["kevin"]
+description = "A library for modeling artistic concepts."
+license = "MIT"
 
 [dependencies]
 
