@@ -7,6 +7,7 @@ enum List {
 
 use List::{ Cons, Nil };
 
+
 struct MyBox<T>(T);
 
 impl<T> MyBox<T> {
@@ -43,6 +44,7 @@ fn main() {
     // &MyBox<String> -> &String -> &str
     hello(&(*m)[..]);
     // DerefMut
+
 }
 
 fn hello(name: &str) {
